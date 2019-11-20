@@ -16,14 +16,14 @@ function App(props) {
   );
 }
 
-let dish = React.createElement("h1", { id: "recipe-0" }, "Baked Salmon");
+let dish = React.createElement("h1", { id: "recipe-0", key: 78 }, "Baked Salmon");
 let text = React.createElement(
   "p",
-  { id: "recipe-1", key: "cool" },
+  { id: "recipe-1", key: 89 },
   "Mix some Baked Salmon in a bowl and pray!"
 );
 ReactDOM.render(
-  [<App message="Dave" />, dish, text],
+  [<App key="9" message="Dave" />, dish, text],
   document.getElementById("root")
 );
 document.getElementById("root");
